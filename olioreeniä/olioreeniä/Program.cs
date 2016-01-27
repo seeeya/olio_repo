@@ -66,12 +66,17 @@ namespace olioreeniä
     class Program
     {
         static void Main(string[] args)
+
         {
+            /*
             Elintarvike Banaani = new Elintarvike("Chiquita Banaani", "27.1.2016", 600, 5.5);
             Alkoholi Vodka = new Alkoholi("Saaremaa Vodka", "2015", "40", 600, 20.5);
             Console.WriteLine(Banaani.ToString());
             Console.WriteLine(Vodka.ToString());
-           
+           */
+            Vehicle mycar = new Vehicle("Nissan", "GT-R");
+            Console.WriteLine(mycar.ToString());
+            Console.ReadLine();
         }
     }
 }
