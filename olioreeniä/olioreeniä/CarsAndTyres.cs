@@ -10,15 +10,23 @@ namespace olioreeniä
     {
         public string Brand { get; set; }
         public string Modell { get; set; }
+        public void RemoveTyres()
+        {
+            tyres.Clear();
+        }
+        public void AddTyre(Tyre t)
+        {
+            tyres.Add(t);
+        }
         public Vehicle(string brand, string model)
         {
             Brand = brand;
             Modell = model;
             tyres = new List<Tyre>();
-            tyres.Add(new Tyre("Nokian", "Hakkapeliitta", "205R16"));
-            tyres.Add(new Tyre("Nokian", "Hakkapeliitta", "205R16"));
-            tyres.Add(new Tyre("Nokian", "Hakkapeliitta", "205R16"));
-            tyres.Add(new Tyre("Nokian", "Hakkapeliitta", "205R16"));
+            AddTyre(new Tyre("Nokian", "Hakkapeliitta", "205R16"));
+            AddTyre(new Tyre("Nokian", "Hakkapeliitta", "205R16"));
+            AddTyre(new Tyre("Nokian", "Hakkapeliitta", "205R16"));
+            AddTyre(new Tyre("Nokian", "Hakkapeliitta", "205R16"));
 
         }
         public override string ToString()
@@ -31,7 +39,7 @@ namespace olioreeniä
             }
             return s;
         }
-        private List<Tyre> tyres;
+        public List<Tyre> tyres;
 
     }
     

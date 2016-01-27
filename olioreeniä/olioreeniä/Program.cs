@@ -76,6 +76,12 @@ namespace olioreeniä
            */
             Vehicle mycar = new Vehicle("Nissan", "GT-R");
             Console.WriteLine(mycar.ToString());
+            mycar.RemoveTyres();
+            mycar.AddTyre(new Tyre("Nokian", "Hakkapeliitta", "205R17"));
+            mycar.AddTyre(new Tyre("Nokian", "Hakkapeliitta", "205R17"));
+            mycar.AddTyre(new Tyre("Nokian", "Hakkapeliitta", "205R17"));
+            mycar.AddTyre(new Tyre("Michelin", "X-ICE Xi2", "205R17"));
+            Console.WriteLine(mycar.ToString());
             Console.ReadLine();
         }
     }
